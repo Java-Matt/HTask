@@ -1,2 +1,7 @@
-package com.task.task;public interface MultiFolder {
+package com.task.task;
+
+import java.util.List;
+
+public interface MultiFolder extends Folder{
+    List<Folder> getFolders();
 }

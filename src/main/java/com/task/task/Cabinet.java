@@ -1,2 +1,12 @@
-package com.task.task;public interface Cabinet {
+package com.task.task;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface Cabinet {
+    Optional<Folder> findFolderByName(String name);
+
+    List<Folder> findFoldersBySize(String size);
+
+    int count();
 }
